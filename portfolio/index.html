@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prakadeesh B S</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">prakadeesh</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">projects</a>
+            
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Prakadeesh BS</h1>
+            <p>
+                A perseverant and hardworking student, committed to continuous selfimprovement and eager to secure a role where I can further develop my skills through hands-on experience. I am driven to contribute my best efforts and make a meaningful impact.
+            </p>
+            <p>Currently I'm a student of Sastra, where I'm persuing my bachelor's degree in Computer Science.</p>
+
+            <div class="social-media">
+               
+                <a href="https://www.instagram.com/prakadeesh04/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="mailto:prakadeesh04@gmail.com" target="_blank"><i class='bx bx-envelope'></i>
+                </a>
+                <a href="https://github.com/prakadeesh123" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <a href="https://www.linkedin.com/in/Prakadeesh-Sivakami/" target="_blank" class="btn">View LinkedIn</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-camera'></i>
+                    <h3>Photographer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-code'></i>
+                    <h3>problem solver</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-game'></i>
+                    <h3>Gamer</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/ppp (1).png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/s (1).jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hi there, welcome to my website! I'm Prakadeesh,
+                a passionate web developer who enjoys learning new technologies
+                and solving problems with code!
+            </h3>
+            <p>
+                This website is my personal blog where I write about web development
+                topics that interest me and inspire me.
+            </p>
+            <p>
+                I am passionate about self-improvement and eager to apply my skills in a practical setting and Thank you for visiting my website and getting to know me better. If you have any feedback or
+                suggestions, please let me know. I'd love to hear from you.
+            </p>
+            <a href="images/22500304_PRAKADEESH_BS.pdf" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>projects</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxs-face-mask'></i>
+                <h3>Face Mask Detection</h3>
+                <p>Collaborated with a team to develop a Face Mask Detection System by using
+
+                     CNN model and utilized YOLOv5 architecture for
+                    
+                    efficient object detection and classification.
+                    
+                    Achieving high detection accuracy on YOLOv5.
+                    
+                    Tested on benchmark datasets.
+                    
+                    </p>
+                <a href="https://github.com/prakadeesh123" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-microphone'></i>
+                <h3>Audio Source Identification</h3>
+                <p> Accept the input file as a WAV file and convert it into a NumPy array using a chunking algorithm.
+
+                    Check if the NumPy array exists in the master file.
+                    
+                    If the array is present, mark the file as a duplicate; if not, add the
+                    
+                    file to the master.</p>
+                <a href="https://github.com/prakadeesh123" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+<!-- contact section design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <!-- Include EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Initialize EmailJS with your publicKey -->
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("Xx2rHZd-c22UEq4z3");  // Replace with your public key
+        })();
+    </script>
+
+    <!-- Contact Form -->
+    <form id="contactForm">
+        <div class="input-box">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-box">
+            <input type="number" id="mobile" placeholder="Mobile Number" required>
+            <input type="text" id="subject" placeholder="Email Subject" required>
+        </div>
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+
+    <!-- Message display -->
+    <p id="statusMessage"></p>
+</section>
+
+<!-- JavaScript to handle form submission -->
+<script type="text/javascript">
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();  // Prevents the default form submit action
+
+        // Collect form data
+        const fullName = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        const mobile = document.getElementById('mobile').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        // Template parameters to send to EmailJS
+        const templateParams = {
+            fullName: fullName,
+            email: email,
+            mobile: mobile,
+            subject: subject,
+            message: message
+        };
+
+        // Send the email using EmailJS
+        emailjs.send('service_hxr750i', 'template_49rceua', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById('statusMessage').textContent = 'Your message has been sent successfully!';
+        }, function(error) {
+            console.error('FAILED...', error);
+            document.getElementById('statusMessage').textContent = 'Failed to send message. Please try again later.';
+        });
+    });
+</script>
+
+   
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
